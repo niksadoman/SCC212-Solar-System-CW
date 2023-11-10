@@ -1,13 +1,15 @@
 public class Planet extends Sun {
     
     int speed;
+    int distanceFromSun = 0;
+    int angleFromSun = 0;
 
     public Planet(int distance, int angle, int diameter, String colour, int speed){
         super(distance,angle,diameter,colour);
         this.speed = speed;
     }
 
-    public void drawPlanet(SolarSystem alamSemesta ,int distance, int angle, int diameter, String colour, int distanceFromSun, int angleFromSun ){
+    public void drawPlanet(SolarSystem alamSemesta){
         alamSemesta.drawSolarObjectAbout(distance, angle, diameter, colour, distanceFromSun, angleFromSun);
     }
 

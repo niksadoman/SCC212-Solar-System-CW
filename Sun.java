@@ -12,25 +12,8 @@ public class Sun {
         this.colour = colour;
     }
 
-    public int getDistance(){
-        return distance;
-    }
-
-    public int getAngle(){
-        return angle;
-    }
-
-    public int getDiameter(){
-        return diameter;
-    }
-
-    public String getColour(){
-        return colour;
-    }
-
-    public void drawSun(SolarSystem alamSemesta ,int distance, int angle, int diameter, String colour){
+    public void drawSun(SolarSystem alamSemesta){
         alamSemesta.drawSolarObject(distance, angle, diameter, colour);
-
     }
 }
 

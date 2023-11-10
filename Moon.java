@@ -1,4 +1,5 @@
 public class Moon extends Planet {
+
     int polarDistance;
     int polarAngle;
 
@@ -6,6 +7,10 @@ public class Moon extends Planet {
         super(distance,angle,diameter,colour,speed);
         this.polarDistance = polarDistance;
         this.polarAngle = polarAngle;
+    }
+
+    public void drawMoon(SolarSystem alamSemesta, int polarDistance, int polarAngle){
+        alamSemesta.drawSolarObjectAbout(distance, angle, diameter, colour, polarDistance, polarAngle);
     }
 
     public void setOrbitDistance(int polarDistance){
